@@ -2,6 +2,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firestore_kit/src/exceptions/firestore_failure.dart';
 
 class FirestoreService {
+  /// Creates an instance of FirestoreService
+  ///
+  /// Note: adding a converter to collection will cause no values to be returned.
   const FirestoreService({
     required CollectionReference collection,
   }) : _collection = collection;
